@@ -32,6 +32,8 @@ gem 'quiet_assets', :group => :development
 gem 'ember-rails'
 gem 'ember-source', '1.0.0.rc6'
 
+gem "active_model_serializers"
+
 #group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   #gem 'sdoc', require: false
