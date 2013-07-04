@@ -12,14 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require handlebars
+//= require handlebars-1.0.0-rc.4
 //= require ember
 //= require ember-data
 //= require_self
 //= require vgmix_ember_test
 
 // for more details see: http://emberjs.com/guides/application/
-VgmixEmberTest = Ember.Application.create();
+App = Ember.Application.create();
 
 //= require_tree .
