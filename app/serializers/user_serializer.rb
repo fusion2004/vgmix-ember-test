@@ -1,4 +1,4 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :name
-  has_many :songs, embed: ids
+  has_many :songs, embed: :ids
 end

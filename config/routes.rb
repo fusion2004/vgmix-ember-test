@@ -1,5 +1,12 @@
 VgmixEmberTest::Application.routes.draw do
 
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :users
+      resources :songs
+    end
+  end
+
   root to: 'static#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
