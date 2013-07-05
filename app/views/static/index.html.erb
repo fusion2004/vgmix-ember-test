@@ -14,7 +14,13 @@
 <script type="text/x-handlebars" data-template-name="songs">
 <ul class="songs-list">
 	{{#each song in model}}
-		<li>{{ song.name }} - <a {{ bindAttr href="song.url" }} target="_blank">Download</a></li>
+		<li>{{#linkTo song song}}{{ song.name }}{{/linkTo}}</li>
 	{{/each}}
 </ul>
+</script>
+
+<script type="text/x-handlebars" data-template-name="song">
+<h2>Song: {{ name }}</h2>
+<h3>By {{ user.name }}</h3>
+<p><a {{ bindAttr href="url" }} target="_blank">Download</a></p>
 </script>
