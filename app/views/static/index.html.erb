@@ -1,1 +1,20 @@
-<div>Sup?</div>
+<script type="text/x-handlebars" data-template-name="application">
+<h1>VGMix Ember Test</h1>
+{{ outlet }}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+<p>Hey, there! You must be looking for:</p>
+<ul class="index-list">
+	<li>{{#linkTo songs}}Songs{{/linkTo}}</li>
+	<li>{{#linkTo users}}Users{{/linkTo}}</li>
+</ul>
+</script>
+
+<script type="text/x-handlebars" data-template-name="songs">
+<ul class="songs-list">
+	{{#each song in model}}
+		<li>{{ song.name }} - <a {{ bindAttr href="song.url" }} target="_blank">Download</a></li>
+	{{/each}}
+</ul>
+</script>
