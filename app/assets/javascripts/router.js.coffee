@@ -1,7 +1,7 @@
 # For more information see: http://emberjs.com/guides/routing/
 
 App.Router.map ()->
-	@resource('songs')
-	@resource('users')
-  # @resource('posts')
-
+	@resource 'songs'
+	@resource 'song', { path: '/songs/:song_id' }
+	@resource 'users'
+	return
