@@ -34,6 +34,10 @@ gem 'ember-source', '1.0.0.rc6'
 
 gem "active_model_serializers"
 
+group :development do
+  gem 'meta_request'
+end
+
 #group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   #gem 'sdoc', require: false
