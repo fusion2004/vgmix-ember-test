@@ -17,10 +17,12 @@
 		<li>{{#linkTo song song}}{{ song.name }}{{/linkTo}}</li>
 	{{/each}}
 </ul>
+<p>{{#linkTo index}}Back to Home{{/linkTo}}</p>
 </script>
 
 <script type="text/x-handlebars" data-template-name="song">
 <h2>Song: {{ name }}</h2>
 <h3>By {{ user.name }}</h3>
 <p><a {{ bindAttr href="url" }} target="_blank">Download</a></p>
+<p>{{#linkTo songs}}Back to Songs{{/linkTo}}</p>
 </script>
