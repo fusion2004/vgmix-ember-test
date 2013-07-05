@@ -39,5 +39,11 @@
 
 <script type="text/x-handlebars" data-template-name="user">
 <h2>User: {{ name }}</h2>
+<p>Songs:</p>
+<ul class="songs-list">
+	{{#each song in songs}}
+		<li>{{#linkTo song song}}{{ song.name }}{{/linkTo}}</li>
+	{{/each}}
+</ul>
 <p>{{#linkTo users}}Back to Users{{/linkTo}}</p>
 </script>
