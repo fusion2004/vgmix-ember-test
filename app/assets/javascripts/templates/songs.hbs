@@ -1,0 +1,7 @@
+<p>All Songs:</p>
+<ul class="songs-list">
+	{{#each song in model}}
+		<li>{{#linkTo song song}}{{ song.name }}{{/linkTo}}</li>
+	{{/each}}
+</ul>
+<p>{{#linkTo index}}Back to Home{{/linkTo}}</p>

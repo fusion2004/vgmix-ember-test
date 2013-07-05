@@ -1,0 +1,6 @@
+<ul class="songs-list">
+	{{#each user in model}}
+		<li>{{#linkTo user user}}{{ user.name }}{{/linkTo}}</li>
+	{{/each}}
+</ul>
+<p>{{#linkTo index}}Back to Home{{/linkTo}}</p>

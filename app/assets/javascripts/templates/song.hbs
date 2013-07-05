@@ -1,0 +1,4 @@
+<h2>Song: {{ name }}</h2>
+<h3>By {{#linkTo user user}}{{ user.name }}{{/linkTo}}</h3>
+<p><a {{ bindAttr href="url" }} target="_blank">Download</a></p>
+<p>{{#linkTo songs}}Back to Songs{{/linkTo}}</p>
